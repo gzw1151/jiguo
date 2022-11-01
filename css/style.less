@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    outline: none;
+}
+
+header {
+    width: 100%;
+    background-color: aliceblue;
+    height: 76px;
+    line-height: 76px;
+    border-bottom: 1px solid #cecfcf;
+    box-shadow: 0 0 5px #cecfcf inset;
+    overflow: hidden;
+
+
+    .wrap {
+        width: 80%;
+
+        margin: 0 auto;
+
+        .logo {
+            float: left;
+            padding-top: 15px;
+
+            img {
+                width: 132px;
+            }
+        }
+
+        .nav {
+            float: left;
+            margin-left: 30px;
+
+            li {
+                float: left;
+                padding: 0 25px;
+
+                a {
+                    transition: color 0.2s ease;
+                    font-size: 20px;
+                }
+
+                a:hover {
+                    color: #fe5341;
+                }
+
+
+            }
+        }
+
+        .you {
+            float: right;
+
+            a {
+                color: red;
+            }
+
+
+
+            .login {
+                transition: all 0.15s linear;
+                font-size: 16px;
+                padding: 5px 10px;
+                text-align: center;
+                border-radius: 3px;
+                border: 1px #fe5341 solid;
+                margin-left: 10px;
+            }
+
+            .search {
+                display: inline-block;
+                background: url(./img/search.png) no-repeat 5px 10px;
+                width: 42px;
+                height: 40px;
+                margin-top: 15px;
+                float: left;
+
+            }
+
+            .search:hover {
+                transform: scale(1.1);
+            }
+
+            .login:hover {
+                background: #fe5341;
+                color: #fff;
+            }
+
+        }
+    }
+}
+
+footer {
+    background: #505050;
+    color: #a3a3a3;
+    overflow: hidden;
+    padding: 40px;
+    box-sizing: border-box;
+    font-size: 13px;
+
+    .wrap {
+        width: 80%;
+        margin: 0 auto;
+        overflow: hidden;
+
+
+        li {
+            float: left;
+            margin: 0px 20px;
+
+            h2 {
+                color: #fff;
+                font-weight: normal;
+            }
+
+            a {
+                color: #a3a3a3;
+
+            }
+
+            .a {
+                a {
+                    color: #a3a3a3;
+                    display: inline-block;
+                    width: 80px;
+                }
+            }
+        }
+    }
+
+    .copy {
+        margin-top: 50px;
+        text-align: center;
+
+    }
+}
