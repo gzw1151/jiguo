@@ -1,0 +1,110 @@
+.focus {
+  height: 300px;
+  background: url(img/original.jpg) no-repeat center top;
+  overflow: hidden;
+}
+.focus .txt {
+  width: 80%;
+  margin: 0 auto;
+  text-align: right;
+  padding-top: 35px;
+  color: #fff;
+}
+.focus .txt h2 {
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+.focus .txt span {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 16px;
+  margin-right: 10px;
+  background: rgba(255, 255, 255, 0.3);
+}
+.focus .txt .time {
+  padding: 20px 0 16px 0;
+  font-size: 18px;
+}
+.focus .txt .btn a {
+  width: 242px;
+  height: 48px;
+  text-align: center;
+  display: inline-block;
+  line-height: 48px;
+  font-size: 24px;
+  border-radius: 3px;
+  background: #fe5341;
+  color: #fff;
+}
+.wrap {
+  margin-top: 30px;
+}
+.wrap .title {
+  position: relative;
+  margin-left: 70px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.wrap .swiper {
+  text-align: center;
+}
+.wrap .swiper .on {
+  margin-left: 70px;
+}
+.wrap .swiper .on li {
+  position: relative;
+  overflow: hidden;
+  width: 22%;
+  height: 286px;
+  float: left;
+  border: 1px solid #e6e9e9;
+  border-radius: 6px;
+  margin-right: 20px;
+}
+.wrap .swiper .on li a {
+  display: block;
+}
+.wrap .swiper .on li a img {
+  width: 98%;
+}
+.wrap .swiper .on li a .top-tip {
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+.wrap .swiper .on li a .shoufa {
+  background-color: red;
+}
+.wrap .swiper .on li a .tys {
+  background: #fbf4cb;
+  color: #c4a96a;
+}
+.wrap .swiper .on li a .name {
+  font-size: 18px;
+  height: 48px;
+  font-weight: bold;
+}
+.wrap .swiper .on li a .red {
+  color: #fe5341;
+}
+.wrap .swiper .on li a .tabs {
+  padding: 6px 0;
+}
+.wrap .swiper .on li a .sq {
+  font-size: 16px;
+  line-height: 28px;
+}
+.wrap .swiper .on li a .current {
+  font-size: 14px;
+  line-height: 20px;
+}
+.wrap .swiper .on li a .green {
+  color: #80c269;
+}
+.wrap .swiper .on li a .green {
+  color: #80c269;
+}
+.wrap .swiper .on li img:hover img {
+  animation: fade 1.2s ease-in infinite both;
+}

@@ -2,14 +2,22 @@
   margin: 0;
   padding: 0;
 }
+
 ul {
   list-style: none;
 }
+
 a {
   text-decoration: none;
   color: #333;
   outline: none;
 }
+
+.wrap {
+  width: 80%;
+  margin: 0 auto;
+}
+
 header {
   width: 100%;
   background-color: aliceblue;
@@ -19,38 +27,48 @@ header {
   box-shadow: 0 0 5px #cecfcf inset;
   overflow: hidden;
 }
+
 header .wrap {
   width: 80%;
   margin: 0 auto;
 }
+
 header .wrap .logo {
   float: left;
   padding-top: 15px;
 }
+
 header .wrap .logo img {
   width: 132px;
 }
+
 header .wrap .nav {
   float: left;
   margin-left: 30px;
 }
+
 header .wrap .nav li {
   float: left;
   padding: 0 25px;
 }
+
 header .wrap .nav li a {
   transition: color 0.2s ease;
   font-size: 20px;
 }
+
 header .wrap .nav li a:hover {
   color: #fe5341;
 }
+
 header .wrap .you {
   float: right;
 }
+
 header .wrap .you a {
   color: red;
 }
+
 header .wrap .you .login {
   transition: all 0.15s linear;
   font-size: 16px;
@@ -60,6 +78,7 @@ header .wrap .you .login {
   border: 1px #fe5341 solid;
   margin-left: 10px;
 }
+
 header .wrap .you .search {
   display: inline-block;
   background: url(img/search.png) no-repeat 5px 10px;
@@ -68,13 +87,16 @@ header .wrap .you .search {
   margin-top: 15px;
   float: left;
 }
+
 header .wrap .you .search:hover {
   transform: scale(1.1);
 }
+
 header .wrap .you .login:hover {
   background: #fe5341;
   color: #fff;
 }
+
 footer {
   background: #505050;
   color: #a3a3a3;
@@ -83,27 +105,33 @@ footer {
   box-sizing: border-box;
   font-size: 13px;
 }
+
 footer .wrap {
   width: 80%;
   margin: 0 auto;
   overflow: hidden;
 }
+
 footer .wrap li {
   float: left;
   margin: 0px 20px;
 }
+
 footer .wrap li h2 {
   color: #fff;
   font-weight: normal;
 }
+
 footer .wrap li a {
   color: #a3a3a3;
 }
+
 footer .wrap li .a a {
   color: #a3a3a3;
   display: inline-block;
   width: 80px;
 }
+
 footer .copy {
   margin-top: 50px;
   text-align: center;
