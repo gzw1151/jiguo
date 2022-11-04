@@ -3,6 +3,23 @@
   padding: 0;
 }
 
+@keyframes lun {
+  100% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes rotateln {
+  0% {
+    transform: translate(800px, -800px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+
 ul {
   list-style: none;
 }

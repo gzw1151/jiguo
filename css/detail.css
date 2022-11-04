@@ -1,0 +1,17 @@
+.box {
+  background: #f7f7f7;
+}
+.box .banxin {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.box .banxin .guide {
+  color: #a3a3a3;
+  height: 50px;
+  line-height: 50px;
+  font-size: 12px;
+}
+.box .banxin .guide a {
+  color: #a3a3a3;
+}

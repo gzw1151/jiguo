@@ -1,0 +1,213 @@
+.title {
+    width: 100%;
+    height: 170px;
+    color: #333333;
+    margin: 0px auto;
+    background-color: #ffffff;
+    text-align: center;
+    overflow: hidden;
+
+    p {
+        font-size: 40px;
+        margin: 40px 0px 38px 0px;
+    }
+
+    ul {
+        display: inline-block;
+        width: auto;
+        height: 40px;
+        overflow: hidden;
+        margin: 0 auto;
+
+        li {
+            float: left;
+            width: 165px;
+            height: 100%;
+            box-sizing: border-box;
+
+            a {
+                font-size: 18px;
+                color: #a3a3a3;
+            }
+        }
+
+        .active {
+            border-bottom: 4px solid #fe5431;
+        }
+    }
+
+
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.box3 {
+    background: #f7f7f7;
+    overflow: hidden;
+
+    .a1 {
+        width: 80%;
+        margin: 0 auto;
+        overflow: hidden;
+
+
+        #myDiv {
+            width: 700px;
+            margin: 20px;
+
+
+
+            li {
+                border-radius: 6px;
+                border: 1px solid #e6e9e9;
+                margin-bottom: 13px;
+                position: relative;
+                overflow: hidden;
+            }
+
+            a:hover img {
+
+                animation: lun 1.5s ease-in infinite both;
+            }
+
+            img {
+                border-radius: 6px;
+                width: 700px;
+                height: 400px;
+            }
+
+            .info {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                box-sizing: border-box;
+                background: rgba(255, 255, 255, .9);
+                padding: 10px 22px;
+
+                .title1 {
+                    font-size: 18px;
+                    padding: 9px 0 12px;
+                    font-weight: normal;
+                }
+
+                .btm {
+                    font-size: 13px;
+                    padding: 16px 0 11px;
+
+                    .userInfo {
+                        .avt {
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 50%;
+                            background: url(./img/tx.jpg) no-repeat;
+                            display: inline-block;
+                            vertical-align: middle;
+                            margin-right: 15px;
+                            background-size: contain;
+                        }
+
+                        .name {
+                            color: #fe695a;
+                        }
+
+                        .time {
+                            color: #a3a3a3;
+                        }
+                    }
+
+                    .icon {
+                        span {
+                            display: inline-block;
+                            vertical-align: middle;
+                            padding-left: 14px;
+                            margin-left: 8px;
+
+                        }
+
+                        .zan {
+                            background: url(img/zan.png) no-repeat left 4px;
+                        }
+
+                        .look {
+                            background: url(img/reply.png) no-repeat left center;
+                        }
+                    }
+                }
+
+
+            }
+
+
+        }
+
+        .listR {
+            width: 270px;
+            margin-top: 10px;
+
+            .title2 {
+                position: relative;
+                font-size: 18px;
+                height: 25px;
+                line-height: 25px;
+                padding-left: 30px;
+                border-left: 10px solid rgb(96, 1, 1);
+                font-weight: normal;
+
+
+            }
+
+            .imgBox {
+                margin-top: 20px;
+            }
+
+
+
+            .listR .imgBox {
+                margin-top: 20px;
+            }
+
+            .info {
+                margin: 10px 0 20px;
+
+                h5 {
+                    font-size: 16px;
+                    padding: 5px 0;
+                    color: black;
+                }
+
+                .text {
+                    color: #a3a3a3;
+                    font-size: 14px;
+                }
+
+            }
+
+
+        }
+    }
+}
+
+.playMore {
+    text-align: center;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+
+
+    a {
+        color: rgb(255, 0, 0);
+    }
+
+    .more-btn {
+        background: url(./img/more.png) no-repeat left center;
+        color: #000000;
+        padding-left: 24px;
+    }
+}

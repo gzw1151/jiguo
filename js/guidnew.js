@@ -1,60 +1,17 @@
-
-var sq = document.getElementsByClassName('shenqimg')[0]
-var ren = document.getElementsByClassName('ren')[0]
-var shu = document.getElementsByClassName('shu')[0]
-
-sq.addEventListener("click", function () {
-    ren.innerHTML = ren.innerHTML - 0 + 1;
-    shu.innerHTML = shu.innerHTML - 0 - 1;
-    if (shu.innerHTML == 0) {
-        sq.disabled = true;
-        sq.style.backgroundColor = "gray";
-        sq.innerHTML = "暂无库存";
-    }
-});
-var time = document.getElementsByClassName("time")[0];
-// 倒计时双11时间
-var futureData = new Date(2022, 10, 11, 00, 00, 00);
-var timer = null;
-
-timer = setInterval(function () {
-    // 获取现在时间
-    var now = new Date();
-    // 动态拿到现在时间到双十一时间的毫秒数
-    var jetTime = futureData - now;
-    // 天数
-    var day = timeFormatting(Math.floor(jetTime / 1000 / 60 / 60 / 24));
-    // 小时
-    var hour = timeFormatting(Math.floor((jetTime / 1000 / 60 / 60) % 24));
-    // 分钟
-    var minute = timeFormatting(Math.floor((jetTime / 1000 / 60) % 60));
-    // 秒
-    var second = timeFormatting(Math.floor((jetTime / 1000) % 60));
-    time.innerHTML = `申请时间剩余：${day}天${hour}小时${minute}分钟${second}秒`;
-    // 判断时间是否到双十一
-    if (day <= 0 && hour <= 0 && minute <= 0 && second <= 0) {
-        clearInterval(timer);
-        countDown.innerHTML = `双十一已到，大家开始狂欢吧！`;
-    }
-}, 1000);
-
-// 封装时间格式化函数
-function timeFormatting(time) {
-    return time < 10 ? "0" + time : time;
-}
-// 发现酷玩
 var ul_ = document.getElementById('myDiv')
 var datalist = []
 function ajax_() {
     var xhr = new XMLHttpRequest() || new ActiveXObject("Microsoft.XMLHTTP");
-    xhr.open("get", "http://127.0.0.1:3000/play/new", true);
+    xhr.open("get", "http://127.0.0.1:3000/guid/new", true);
     xhr.send();
     xhr.onreadystatechange = function () {
         if (xhr.readyState == 4) {
             if (xhr.status == 200) {
-                datalist = JSON.parse(xhr.response);
+                datalist = JSON.parse(xhr.responseText);
                 // 遍历数据
                 show();
+            } else {
+                console.log("请求错误");
             }
         }
     };
@@ -64,7 +21,7 @@ window.addEventListener("load", function () {
 });
 var index = 0
 function show() {
-    for (var item of datalist[index]) {
+    for (var item of datalist) {
         var li = document.createElement("li");
         var a = document.createElement("a");
         a.href = "##";
@@ -83,14 +40,14 @@ function show() {
         a_div.className = 'info'
         a_divp.innerHTML = item.text;
         a_divp.className = 'name'
-        a_span.innerHTML = item.description;
+
         a_divp.appendChild(a_span)
         a_div.appendChild(a_divp)
 
         var a_div_div1 = document.createElement('div');
         var a_div_div1_span1 = document.createElement('span');
         a_div_div1.className = 'tip fix'
-        a_div_div1_span1.innerHTML = item.price;
+
         a_div_div1_span1.className = 'price left'
         a_div_div1.appendChild(a_div_div1_span1)
 
@@ -134,10 +91,4 @@ bth.onclick = function () {
         }, 1000);
     }
 };
-
-
-
-
-
-
 
