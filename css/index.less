@@ -1,3 +1,12 @@
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+
 .focus {
     height: 300px;
     background: url(./img/original.jpg) no-repeat center top;
@@ -9,6 +18,10 @@
         text-align: right;
         padding-top: 35px;
         color: #fff;
+        transform: translate(800px, -800px);
+        animation: rotateln 1s ease both;
+
+
 
         h2 {
             font-size: 34px;
@@ -19,7 +32,7 @@
         span {
             display: inline-block;
             padding: 5px 10px;
-            border-radius: 3px;
+            border-radius: 5px;
             font-size: 16px;
             margin-right: 10px;
             background: rgba(255, 255, 255, .3);
@@ -32,7 +45,7 @@
             font-size: 18px;
         }
 
-        .btn a {
+        .btn button {
             width: 242px;
             height: 48px;
             text-align: center;
@@ -42,22 +55,42 @@
             border-radius: 3px;
             background: #fe5341;
             color: #fff;
+            border: none;
         }
 
 
     }
 }
 
+@keyframes lun {
+    100% {
+        opacity: 0.8;
+    }
+}
+
+@keyframes rotateln {
+    0% {
+        transform: translate(800px, -800px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+
 .wrap {
     margin-top: 30px;
+    margin-bottom: 30px;
 
 
     .title {
         position: relative;
-        margin-left: 70px;
+
 
         font-size: 20px;
         font-weight: bold;
+        margin-bottom: 5px;
     }
 
     .swiper {
@@ -65,24 +98,26 @@
 
 
         .on {
-            margin-left: 70px;
+
 
 
             li {
+                padding: 0px 0px;
                 position: relative;
                 overflow: hidden;
-                width: 22%;
+                width: 20%;
                 height: 286px;
                 float: left;
                 border: 1px solid #e6e9e9;
                 border-radius: 6px;
-                margin-right: 20px;
+                margin-left: 45px;
+
 
                 a {
                     display: block;
 
                     img {
-                        width: 98%;
+                        width: 99%;
                     }
 
 
@@ -96,6 +131,9 @@
 
                     .shoufa {
                         background-color: red;
+                        border-radius: 5px;
+                        padding: 0px 3px;
+                        z-index: 22;
                     }
 
                     .tys {
@@ -136,11 +174,327 @@
                     }
                 }
 
-                img:hover img {
+                a:hover img {
 
-                    animation: fade 1.2s ease-in infinite both;
+                    animation: lun 1.2s ease-in infinite both;
                 }
             }
         }
+    }
+
+    .swiper-button-prev {
+        position: absolute;
+
+    }
+}
+
+
+
+.box1 {
+    background: #f7f7f7;
+    overflow: hidden;
+
+
+    .a1 {
+        width: 80%;
+        margin: 0 auto;
+
+        .title {
+            position: relative;
+            padding: 18px 0 16px;
+            font-size: 20px;
+            font-weight: bold;
+
+
+            .more {
+                font-weight: normal;
+                position: absolute;
+                right: 0;
+                top: 22px;
+                padding-right: 17px;
+                font-size: 14px;
+                background: url(img/readMore.png) no-repeat right 7px;
+                color: #fd6959;
+            }
+        }
+
+        .on1 {
+            li {
+                height: 230px;
+                position: relative;
+                overflow: hidden;
+                width: 22%;
+                box-sizing: border-box;
+
+                float: left;
+                border: 1px solid #e6e9e9;
+                border-radius: 6px;
+                margin-left: 45px;
+                margin: 10px 10px;
+
+                img {
+                    width: 99%;
+                    padding-left: 14px;
+                }
+
+                a {
+                    display: block;
+
+
+                    .name {
+                        padding-left: 14px;
+                        font-size: 14px;
+                        height: 45px;
+                        overflow: hidden;
+                        word-break: break-all;
+                    }
+
+                    .tip {
+                        color: #a3a3a3;
+                        font-size: 12px;
+                        height: 20px;
+                        line-height: 20px;
+
+                        span {
+                            display: inline-block;
+                            vertical-align: middle;
+                            padding-left: 14px;
+                            margin-left: 8px;
+
+                        }
+
+                        .zan {
+                            background: url(img/zan.png) no-repeat left 4px;
+                        }
+
+                        .look {
+                            background: url(img/reply.png) no-repeat left 4px;
+                            ;
+                        }
+                    }
+
+
+
+
+
+
+
+                }
+
+                a:hover img {
+
+                    animation: lun 1.5s ease-in infinite both;
+                }
+
+                .xian {
+                    position: absolute;
+                    bottom: -10px;
+                }
+            }
+        }
+    }
+}
+
+.box2 {
+    overflow: hidden;
+
+    .a1 {
+        width: 80%;
+        margin: 0 auto;
+
+
+
+
+
+        .title {
+            position: relative;
+            padding: 18px 0 16px;
+            font-size: 20px;
+            font-weight: bold;
+
+
+            .more {
+                font-weight: normal;
+                position: absolute;
+                right: 0;
+                top: 22px;
+                padding-right: 17px;
+                font-size: 14px;
+                background: url(img/readMore.png) no-repeat right 7px;
+                color: #fd6959;
+            }
+        }
+
+        .on1 {
+            padding: 10px;
+
+            li {
+                width: 20%;
+                height: 231px;
+                line-height: 21px;
+                margin: 20px;
+                float: left;
+                border: 1px solid #e6e9e9;
+                border-radius: 6px;
+
+                img {
+                    width: 100%;
+                }
+
+                .name {
+                    font-size: 14px;
+                    height: 45px;
+                    overflow: hidden;
+                    word-break: break-all;
+                }
+
+                .tip {
+                    color: #a3a3a3;
+                    padding: 13px 0;
+                    font-size: 12px;
+
+                }
+
+                .icon {
+                    padding-left: 15px;
+
+                    .xin {
+                        padding: 0px 22px;
+                        background: url(img/xin.png) no-repeat 6px 3px;
+
+                    }
+
+                    .look {
+                        padding: 0px 22px;
+                        background: url(img/reply.png) no-repeat 6px 3px;
+                        ;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.box3 {
+    background: #f7f7f7;
+    overflow: hidden;
+
+
+    .a1 {
+        width: 80%;
+        margin: 0 auto;
+
+        .title {
+            position: relative;
+            padding: 18px 0 16px;
+            font-size: 20px;
+            font-weight: bold;
+
+
+            .more {
+                font-weight: normal;
+                position: absolute;
+                right: 0;
+                top: 22px;
+                padding-right: 17px;
+                font-size: 14px;
+                background: url(img/readMore.png) no-repeat right 7px;
+                color: #fd6959;
+            }
+
+
+        }
+
+        #myDiv {
+            overflow: hidden;
+
+            li {
+                float: left;
+                height: 230px;
+                position: relative;
+                overflow: hidden;
+                width: 22%;
+                box-sizing: border-box;
+
+                float: left;
+                border: 1px solid #e6e9e9;
+                border-radius: 6px;
+                margin-left: 45px;
+                margin: 10px 10px;
+
+                img {
+                    width: 100%;
+                    padding-left: 14px;
+                    height: 130px;
+                }
+
+                .info {
+                    padding: 7px 10px 10px;
+
+                    .name {
+                        font-size: 14px;
+                        height: 45px;
+                        overflow: hidden;
+                        word-break: break-all;
+                        padding-left: 14px;
+
+                        span {
+                            display: block;
+                            font-size: 12px;
+                            color: #a3a3a3;
+                        }
+                    }
+
+                    .tip {
+                        color: #a3a3a3;
+                        font-size: 12px;
+                        height: 20px;
+                        line-height: 20px;
+
+
+                        .price {
+                            font-size: 14px;
+                            color: #fe5341;
+
+                        }
+
+                        span {
+                            display: inline-block;
+                            vertical-align: middle;
+                            padding-left: 14px;
+                            margin-left: 8px;
+
+                        }
+
+                        .xin {
+                            background: url(img/xin.png) no-repeat left center;
+                        }
+
+                        .look {
+                            background: url(img/reply.png) no-repeat left center;
+                        }
+                    }
+                }
+            }
+        }
+
+        .playMore {
+            text-align: center;
+            font-size: 16px;
+            padding-top: 10px;
+            padding-bottom: 50px;
+
+
+            a {
+                color: rgb(255, 0, 0);
+            }
+
+            .more-btn {
+                background: url(./img/more.png) no-repeat left center;
+                color: #000000;
+                padding-left: 24px;
+            }
+        }
+
     }
 }

@@ -1,3 +1,9 @@
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
 .focus {
   height: 300px;
   background: url(img/original.jpg) no-repeat center top;
@@ -9,6 +15,8 @@
   text-align: right;
   padding-top: 35px;
   color: #fff;
+  transform: translate(800px, -800px);
+  animation: rotateln 1s ease both;
 }
 .focus .txt h2 {
   font-size: 34px;
@@ -17,7 +25,7 @@
 .focus .txt span {
   display: inline-block;
   padding: 5px 10px;
-  border-radius: 3px;
+  border-radius: 5px;
   font-size: 16px;
   margin-right: 10px;
   background: rgba(255, 255, 255, 0.3);
@@ -26,7 +34,7 @@
   padding: 20px 0 16px 0;
   font-size: 18px;
 }
-.focus .txt .btn a {
+.focus .txt .btn button {
   width: 242px;
   height: 48px;
   text-align: center;
@@ -36,37 +44,50 @@
   border-radius: 3px;
   background: #fe5341;
   color: #fff;
+  border: none;
+}
+@keyframes lun {
+  100% {
+    opacity: 0.8;
+  }
+}
+@keyframes rotateln {
+  0% {
+    transform: translate(800px, -800px);
+  }
+  100% {
+    transform: translate(0);
+  }
 }
 .wrap {
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 .wrap .title {
   position: relative;
-  margin-left: 70px;
   font-size: 20px;
   font-weight: bold;
+  margin-bottom: 5px;
 }
 .wrap .swiper {
   text-align: center;
 }
-.wrap .swiper .on {
-  margin-left: 70px;
-}
 .wrap .swiper .on li {
+  padding: 0px 0px;
   position: relative;
   overflow: hidden;
-  width: 22%;
+  width: 20%;
   height: 286px;
   float: left;
   border: 1px solid #e6e9e9;
   border-radius: 6px;
-  margin-right: 20px;
+  margin-left: 45px;
 }
 .wrap .swiper .on li a {
   display: block;
 }
 .wrap .swiper .on li a img {
-  width: 98%;
+  width: 99%;
 }
 .wrap .swiper .on li a .top-tip {
   position: absolute;
@@ -75,6 +96,9 @@
 }
 .wrap .swiper .on li a .shoufa {
   background-color: red;
+  border-radius: 5px;
+  padding: 0px 3px;
+  z-index: 22;
 }
 .wrap .swiper .on li a .tys {
   background: #fbf4cb;
@@ -105,6 +129,239 @@
 .wrap .swiper .on li a .green {
   color: #80c269;
 }
-.wrap .swiper .on li img:hover img {
-  animation: fade 1.2s ease-in infinite both;
+.wrap .swiper .on li a:hover img {
+  animation: lun 1.2s ease-in infinite both;
+}
+.wrap .swiper-button-prev {
+  position: absolute;
+}
+.box1 {
+  background: #f7f7f7;
+  overflow: hidden;
+}
+.box1 .a1 {
+  width: 80%;
+  margin: 0 auto;
+}
+.box1 .a1 .title {
+  position: relative;
+  padding: 18px 0 16px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.box1 .a1 .title .more {
+  font-weight: normal;
+  position: absolute;
+  right: 0;
+  top: 22px;
+  padding-right: 17px;
+  font-size: 14px;
+  background: url(img/readMore.png) no-repeat right 7px;
+  color: #fd6959;
+}
+.box1 .a1 .on1 li {
+  height: 230px;
+  position: relative;
+  overflow: hidden;
+  width: 22%;
+  box-sizing: border-box;
+  float: left;
+  border: 1px solid #e6e9e9;
+  border-radius: 6px;
+  margin-left: 45px;
+  margin: 10px 10px;
+}
+.box1 .a1 .on1 li img {
+  width: 99%;
+  padding-left: 14px;
+}
+.box1 .a1 .on1 li a {
+  display: block;
+}
+.box1 .a1 .on1 li a .name {
+  padding-left: 14px;
+  font-size: 14px;
+  height: 45px;
+  overflow: hidden;
+  word-break: break-all;
+}
+.box1 .a1 .on1 li a .tip {
+  color: #a3a3a3;
+  font-size: 12px;
+  height: 20px;
+  line-height: 20px;
+}
+.box1 .a1 .on1 li a .tip span {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 14px;
+  margin-left: 8px;
+}
+.box1 .a1 .on1 li a .tip .zan {
+  background: url(img/zan.png) no-repeat left 4px;
+}
+.box1 .a1 .on1 li a .tip .look {
+  background: url(img/reply.png) no-repeat left 4px;
+}
+.box1 .a1 .on1 li a:hover img {
+  animation: lun 1.5s ease-in infinite both;
+}
+.box1 .a1 .on1 li .xian {
+  position: absolute;
+  bottom: -10px;
+}
+.box2 {
+  overflow: hidden;
+}
+.box2 .a1 {
+  width: 80%;
+  margin: 0 auto;
+}
+.box2 .a1 .title {
+  position: relative;
+  padding: 18px 0 16px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.box2 .a1 .title .more {
+  font-weight: normal;
+  position: absolute;
+  right: 0;
+  top: 22px;
+  padding-right: 17px;
+  font-size: 14px;
+  background: url(img/readMore.png) no-repeat right 7px;
+  color: #fd6959;
+}
+.box2 .a1 .on1 {
+  padding: 10px;
+}
+.box2 .a1 .on1 li {
+  width: 20%;
+  height: 231px;
+  line-height: 21px;
+  margin: 20px;
+  float: left;
+  border: 1px solid #e6e9e9;
+  border-radius: 6px;
+}
+.box2 .a1 .on1 li img {
+  width: 100%;
+}
+.box2 .a1 .on1 li .name {
+  font-size: 14px;
+  height: 45px;
+  overflow: hidden;
+  word-break: break-all;
+}
+.box2 .a1 .on1 li .tip {
+  color: #a3a3a3;
+  padding: 13px 0;
+  font-size: 12px;
+}
+.box2 .a1 .on1 li .icon {
+  padding-left: 15px;
+}
+.box2 .a1 .on1 li .icon .xin {
+  padding: 0px 22px;
+  background: url(img/xin.png) no-repeat 6px 3px;
+}
+.box2 .a1 .on1 li .icon .look {
+  padding: 0px 22px;
+  background: url(img/reply.png) no-repeat 6px 3px;
+}
+.box3 {
+  background: #f7f7f7;
+  overflow: hidden;
+}
+.box3 .a1 {
+  width: 80%;
+  margin: 0 auto;
+}
+.box3 .a1 .title {
+  position: relative;
+  padding: 18px 0 16px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.box3 .a1 .title .more {
+  font-weight: normal;
+  position: absolute;
+  right: 0;
+  top: 22px;
+  padding-right: 17px;
+  font-size: 14px;
+  background: url(img/readMore.png) no-repeat right 7px;
+  color: #fd6959;
+}
+.box3 .a1 #myDiv {
+  overflow: hidden;
+}
+.box3 .a1 #myDiv li {
+  height: 230px;
+  position: relative;
+  overflow: hidden;
+  width: 22%;
+  box-sizing: border-box;
+  float: left;
+  border: 1px solid #e6e9e9;
+  border-radius: 6px;
+  margin-left: 45px;
+  margin: 10px 10px;
+}
+.box3 .a1 #myDiv li img {
+  width: 100%;
+  padding-left: 14px;
+  height: 130px;
+}
+.box3 .a1 #myDiv li .info {
+  padding: 7px 10px 10px;
+}
+.box3 .a1 #myDiv li .info .name {
+  font-size: 14px;
+  height: 45px;
+  overflow: hidden;
+  word-break: break-all;
+  padding-left: 14px;
+}
+.box3 .a1 #myDiv li .info .name span {
+  display: block;
+  font-size: 12px;
+  color: #a3a3a3;
+}
+.box3 .a1 #myDiv li .info .tip {
+  color: #a3a3a3;
+  font-size: 12px;
+  height: 20px;
+  line-height: 20px;
+}
+.box3 .a1 #myDiv li .info .tip .price {
+  font-size: 14px;
+  color: #fe5341;
+}
+.box3 .a1 #myDiv li .info .tip span {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 14px;
+  margin-left: 8px;
+}
+.box3 .a1 #myDiv li .info .tip .xin {
+  background: url(img/xin.png) no-repeat left center;
+}
+.box3 .a1 #myDiv li .info .tip .look {
+  background: url(img/reply.png) no-repeat left center;
+}
+.box3 .a1 .playMore {
+  text-align: center;
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+.box3 .a1 .playMore a {
+  color: #ff0000;
+}
+.box3 .a1 .playMore .more-btn {
+  background: url(img/more.png) no-repeat left center;
+  color: #000000;
+  padding-left: 24px;
 }
