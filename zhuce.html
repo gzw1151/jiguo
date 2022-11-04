@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,17 +8,16 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/zhuce.css">
 </head>
-
 <body>
-    <!-- 头部 -->
-    <header>
+      <!-- 头部 -->
+      <header>
         <div class="wrap">
             <div class="logo">
                 <a href=""><img src="./img/logonew.png" alt=""></a>
             </div>
             <div class="nav">
                 <ul>
-                    <li><a href="./index.html">首页 </a></li>
+                    <li><a href="">首页 </a></li>
                     <li><a href="">酷玩</a> </li>
                     <li><a href="">导购</a></li>
                     <li><a href="">试用</a> </li>
@@ -28,7 +26,7 @@
             </div>
             <div class="you">
                 <a href="../regist.html" class="login ">注册</a>
-                <a href="./denglu.html" class="login ">登录</a>
+                <a href="../regist.html" class="login ">登录</a>
                 <a href="" class="search"></a>
             </div>
         </div>
@@ -38,25 +36,22 @@
         <div class="box">
             <h2>注册极果</h2>
             <div class="zhuCe">
-                <p><input type="text" placeholder="请输入登录手机号" /></p>
-
-                <p>
-                    <input type="text" placeholder="请输入图片校验码" required="required" name="imgCode" />
-                    <img src="img/imgCode.jpg" width="132" height="35" />
-                </p>
-
-                <p>
-                    <input type="text" placeholder="请输入4位数字验证码" pattern="^\d{4}$" required="required" name="code" />
-                    <a href="javascript:void(0)" class="getCode">获取验证码</a>
-                </p>
-
-                <p><input type="text" placeholder="请输入用户名" required="required" /></p>
-
-                <p><input type="password" placeholder="请输入新密码" required="required" name="psw1" /></p>
-
-                <p><input type="password" placeholder="确定新密码" required="required" name="psw2" /></p>
-
-                <p><button id="submit">立即注册</button></p>
+                <p><input type="text" placeholder="请输入登录手机号" /><span class="a"></span></p>
+				<p>
+					<input type="text" placeholder="请输入图片校验码" required="required" name="imgCode"/>
+					<img src="img/imgCode.jpg" width="132" height="35"/>
+				</p>
+                <span class="a"></span>
+				<p>
+					<input type="text" placeholder="请输入4位数字验证码"  required="required" name="code" class="in_"/>
+					<a href="javascript:void(0)" class="getCode">获取验证码</a>
+                    
+				</p>
+                <span class="a"></span>
+				<p><input type="text" placeholder="请输入用户名" required="required"/><span class="a"></span></p>
+				<p><input type="password" placeholder="请输入新密码" required="required" name="psw1"/><span class="a"></span></p>
+				<p><input type="password" placeholder="确定新密码" required="required" name="psw2"/><span class="a"></span></p>
+				<p><button id="submit">立即注册</button></p>
             </div>
         </div>
     </section>
@@ -133,6 +128,5 @@
         <p class="copy">© 2016 极果版权所有</p>
     </footer>
 </body>
-
 </html>
 <script src="./js/zhuce.js"></script>

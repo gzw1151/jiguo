@@ -36,6 +36,7 @@ section .box .zhuCe {
 }
 section .box .zhuCe p {
   margin-top: 27px;
+  position: relative;
 }
 section .box .zhuCe p input {
   background: #f7f7f7;
@@ -60,21 +61,10 @@ section .box .zhuCe p button {
   font-size: 20px;
   border-radius: 10px;
 }
-section .box .zhuCe p:nth-child(2),
-section .box .zhuCe p:nth-child(3) {
-  position: relative;
-}
-section .box .zhuCe p:nth-child(2) input,
-section .box .zhuCe p:nth-child(3) input {
+section .box .zhuCe p .in_ {
   width: 245px;
 }
-section .box .zhuCe p:nth-child(2) img,
-section .box .zhuCe p:nth-child(3) .getCode {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-section .box .zhuCe p:nth-child(3) .getCode {
+section .box .zhuCe p .getCode {
   display: block;
   box-sizing: border-box;
   width: 132px;
@@ -85,4 +75,20 @@ section .box .zhuCe p:nth-child(3) .getCode {
   font-size: 16px;
   text-align: center;
   color: #a3a3a3;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+section .box .zhuCe .a {
+  font-size: 12px;
+  color: red;
+}
+section .box .zhuCe p:nth-child(2) input,
+section .box .zhuCe p:nth-child(3) input {
+  width: 245px;
+}
+section .box .zhuCe p:nth-child(2) img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
