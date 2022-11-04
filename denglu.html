@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/zhuce.css">
+    <link rel="stylesheet" href="./css/denglu.css">
 </head>
 <body>
-      <!-- 头部 -->
-      <header>
+    <!-- 头部 -->
+    <header>
         <div class="wrap">
             <div class="logo">
                 <a href=""><img src="./img/logonew.png" alt=""></a>
@@ -29,32 +29,21 @@
                 <a href="../regist.html" class="login ">登录</a>
                 <a href="" class="search"></a>
             </div>
+
         </div>
     </header>
-    <!-- 中间注册部分 -->
+    <!-- 登录中间部分 -->
     <section>
         <div class="box">
-            <h2>注册极果</h2>
-            <div class="zhuCe">
-                <p><input type="text" placeholder="请输入登录手机号" /></p>
-
-				<p>
-					<input type="text" placeholder="请输入图片校验码" required="required" name="imgCode"/>
-					<img src="img/imgCode.jpg" width="132" height="35"/>
-				</p>
-
-				<p>
-					<input type="text" placeholder="请输入4位数字验证码" pattern="^\d{4}$" required="required" name="code"/>
-					<a href="javascript:void(0)" class="getCode">获取验证码</a>
-				</p>
+            <h2>登录极果</h2>
+            <div class="dengLu">
+                <p><input type="text" placeholder="请输入登录手机号" pattern="^1[34578][0-9]{9}$" required="required" name="tel"/></p>
 
 				<p><input type="text" placeholder="请输入用户名" required="required"/></p>
 
-				<p><input type="password" placeholder="请输入新密码" required="required" name="psw1"/></p>
-
-				<p><input type="password" placeholder="确定新密码" required="required" name="psw2"/></p>
+				<p><input type="password" placeholder="请输入密码" required="required" name="psw1"/></p>
 				
-				<p><button id="submit">立即注册</button></p>
+				<p><button id="submit">立即登录</button></p>
             </div>
         </div>
     </section>
@@ -130,6 +119,6 @@
         </div>
         <p class="copy">© 2016 极果版权所有</p>
     </footer>
+
 </body>
 </html>
-<script src="./js/zhuce.js"></script>
