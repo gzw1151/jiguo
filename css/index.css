@@ -73,6 +73,8 @@
 .wrap {
   margin-top: 30px;
   margin-bottom: 30px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .wrap .title {
@@ -85,6 +87,8 @@
 .wrap .swiper {
   text-align: center;
 }
+
+.wrap .swiper .on {}
 
 .wrap .swiper .on li {
   padding: 0px 0px;

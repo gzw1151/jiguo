@@ -71,7 +71,7 @@ function show() {
         li.appendChild(a);
         ul_.appendChild(li);
         a_img.addEventListener("click", function () {
-            window.location.href = "./try/tryProduct.html";
+            window.location.href = "../guid/detail.html";
         });
     }
 }
@@ -95,10 +95,5 @@ var shopImgs = document.getElementsByTagName('img')
 
 // 遍历全部的img路径跳转
 // 改跳转路径
-for (let item of shopImgs) {
-    item.addEventListener("click", function () {
-        window.location.href = "./shop/shopProduct.html";
 
-    });
-}
 

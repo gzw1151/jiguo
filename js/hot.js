@@ -58,9 +58,8 @@ function show() {
         a.appendChild(a_div);
         li.appendChild(a);
         ul_.appendChild(li);
-        a_img.addEventListener("click", function () {
-            window.location.href = "./try/tryProduct.html";
-        });
+
+
     }
 }
 var bth = document.getElementsByClassName('more-btn ')[0]
@@ -85,7 +84,7 @@ var shopImgs = document.getElementsByTagName('img')
 // 改跳转路径
 for (let item of shopImgs) {
     item.addEventListener("click", function () {
-        window.location.href = "./shop/shopProduct.html";
+        window.location.href = "../guid/detail.html";
 
     });
 }

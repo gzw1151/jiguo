@@ -59,9 +59,9 @@ function show() {
         var a_div_div2_span2 = document.createElement('span');
         a_div_div2.className = 'right icon'
         a_div_div2_span1.innerHTML = item.like
-        a_div_div2_span1.className = "look";
+        a_div_div2_span1.className = "xin";
         a_div_div2_span2.innerHTML = item.words
-        a_div_div2_span2.className = "xin";
+        a_div_div2_span2.className = "look";
         a_div_div2.appendChild(a_div_div2_span1)
         a_div_div2.appendChild(a_div_div2_span2)
 
@@ -71,7 +71,7 @@ function show() {
         li.appendChild(a);
         ul_.appendChild(li);
         a_img.addEventListener("click", function () {
-            window.location.href = "./try/tryProduct.html";
+            window.location.href = "../guid/detail.html";
         });
     }
 }

@@ -72,6 +72,10 @@
 .wrap .swiper {
   text-align: center;
 }
+.wrap .swiper .on {
+  width: 80%;
+  margin: 0 auto;
+}
 .wrap .swiper .on li {
   padding: 0px 0px;
   position: relative;
