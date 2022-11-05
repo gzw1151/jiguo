@@ -38,7 +38,7 @@ section {
 
             p {
                 margin-top: 27px;
-
+                position: relative;
                 input {
                     background: #f7f7f7;
                     color: #a3a3a3;
@@ -50,7 +50,6 @@ section {
                     border: 1px #eee solid;
                     border-radius: 10px;
                 }
-
                 button {
                     background: #fe5341;
                     color: #fff;
@@ -63,36 +62,38 @@ section {
                     font-size: 20px;
                     border-radius: 10px;
                 }
+                .in_{
+                    width: 245px;
+                }
+                .getCode {
+                    display: block;
+                    box-sizing: border-box;
+                    width: 132px;
+                    height: 50px;
+                    line-height: 50px;
+                    border: 1px #a3a3a3 solid;
+                    border-radius: 10px;
+                    font-size: 16px;
+                    text-align: center;
+                    color: #a3a3a3;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                }
             }
-
-            p:nth-child(2),
-            p:nth-child(3) {
-                position: relative;
+            .a{
+                font-size: 12px;
+                color: red;
             }
-
             p:nth-child(2) input,
             p:nth-child(3) input {
                 width: 245px;
             }
 
-            p:nth-child(2) img,
-            p:nth-child(3) .getCode {
+            p:nth-child(2) img{
                 position: absolute;
                 bottom: 0;
                 right: 0;
-            }
-
-            p:nth-child(3) .getCode {
-                display: block;
-                box-sizing: border-box;
-                width: 132px;
-                height: 50px;
-                line-height: 50px;
-                border: 1px #a3a3a3 solid;
-                border-radius: 10px;
-                font-size: 16px;
-                text-align: center;
-                color: #a3a3a3;
             }
         }
     }
