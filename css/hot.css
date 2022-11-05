@@ -129,6 +129,6 @@
 }
 .box3 .a1 .playMore .more-btn {
   background: url(img/more.png) no-repeat left center;
-  color: #000000;
+  /* color: #000000; */
   padding-left: 24px;
 }

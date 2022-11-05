@@ -16,9 +16,6 @@ function ajax_() {
         }
     };
 }
-window.addEventListener("load", function () {
-    ajax_();
-});
 var index = 0
 function show() {
     for (var item of datalist) {
@@ -36,24 +33,20 @@ function show() {
 
         var a_div = document.createElement('div');
         var a_divp = document.createElement("p");
-        var a_span = document.createElement('span');
+        // var a_span = document.createElement('span');
         a_div.className = 'info'
         a_divp.innerHTML = item.text;
         a_divp.className = 'name'
 
-        a_divp.appendChild(a_span)
+        // a_divp.appendChild(a_span)
         a_div.appendChild(a_divp)
 
         var a_div_div1 = document.createElement('div');
-        var a_div_div1_span1 = document.createElement('span');
+        // var a_div_div1_span1 = document.createElement('span');
         a_div_div1.className = 'tip fix'
 
-        a_div_div1_span1.className = 'price left'
-        a_div_div1.appendChild(a_div_div1_span1)
-
-
-
-
+        // a_div_div1_span1.className = 'price left'
+        // a_div_div1.appendChild(a_div_div1_span1)
         var a_div_div2 = document.createElement('div');
         var a_div_div2_span1 = document.createElement('span');
         var a_div_div2_span2 = document.createElement('span');
@@ -75,6 +68,10 @@ function show() {
         });
     }
 }
+
+window.addEventListener("load", function () {
+    ajax_();
+});
 var bth = document.getElementsByClassName('more-btn ')[0]
 
 bth.onclick = function () {
@@ -88,6 +85,7 @@ bth.onclick = function () {
     if (index == datalist.length - 1) {
         setTimeout(function () {
             bth.innerHTML = '没有更多了'
+
         }, 1000);
     }
 };

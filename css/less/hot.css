@@ -1,0 +1,134 @@
+.title {
+  width: 100%;
+  height: 170px;
+  color: #333333;
+  margin: 0px auto;
+  background-color: #ffffff;
+  text-align: center;
+  overflow: hidden;
+}
+.title p {
+  font-size: 40px;
+  margin: 40px 0px 38px 0px;
+}
+.title ul {
+  display: inline-block;
+  width: auto;
+  height: 40px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.title ul li {
+  float: left;
+  width: 165px;
+  height: 100%;
+  box-sizing: border-box;
+}
+.title ul li a {
+  font-size: 18px;
+  color: #a3a3a3;
+}
+.title ul .active {
+  border-bottom: 4px solid #fe5431;
+}
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  overflow: hidden;
+}
+.report-box {
+  background: #f7f7f7;
+  overflow: hidden;
+}
+.report-box .wrap {
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 1000px;
+  min-width: 1000px;
+  text-align: left;
+  margin: 0 auto;
+  padding-top: 25px;
+}
+.report-box .wrap #myDiv {
+  padding-bottom: 20px;
+  list-style: none;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.report-box .wrap #myDiv li {
+  background: #fff;
+  height: 225px;
+  margin-bottom: 40px;
+  width: 220px;
+  line-height: 21px;
+  margin: 0 27px 20px 0;
+  float: left;
+  border: 1px solid #e6e9e9;
+  border-radius: 6px;
+}
+.report-box .wrap #myDiv li a {
+  color: #474747;
+  display: block;
+  height: 240px;
+  text-decoration: none;
+}
+.report-box .wrap #myDiv li a .content_pic {
+  border-radius: 6px 6px 0 0;
+  vertical-align: top;
+  width: 220px;
+  height: 130px;
+}
+.report-box .wrap #myDiv li a .info {
+  height: 90px;
+  background: url(../img/listbg.jpg) no-repeat left bottom;
+  background-size: 221px 19px;
+  padding: 7px 10px 10px;
+}
+.report-box .wrap #myDiv li a .info .name {
+  font-size: 14px;
+  height: 45px;
+  overflow: hidden;
+  word-break: break-all;
+}
+.report-box .wrap #myDiv li a .info .tip {
+  color: #a3a3a3;
+  padding: 13px 0;
+}
+.report-box .wrap #myDiv li a .info .tip .right {
+  float: right;
+}
+.report-box .wrap #myDiv li a .info .tip .right .xin {
+  background: url(../img/xin.png) no-repeat left center;
+}
+.report-box .wrap #myDiv li a .info .tip .right .look {
+  background: url(../img/reply.png) no-repeat left center;
+}
+.report-box .wrap #myDiv li a .info .tip .right span {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 14px;
+  margin-left: 3px;
+  font-size: 12px;
+}
+.report-box .wrap .playMore {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+.report-box .wrap .playMore .more-btn {
+  width: 100%;
+  background: url(../img/more.png) no-repeat left center;
+  color: #fe5341;
+  padding-left: 24px;
+}
