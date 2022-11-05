@@ -7,10 +7,12 @@
   text-align: center;
   overflow: hidden;
 }
+
 .title p {
   font-size: 40px;
   margin: 40px 0px 38px 0px;
 }
+
 .title ul {
   display: inline-block;
   width: auto;
@@ -18,117 +20,138 @@
   overflow: hidden;
   margin: 0 auto;
 }
+
 .title ul li {
   float: left;
   width: 165px;
   height: 100%;
   box-sizing: border-box;
 }
+
 .title ul li a {
   font-size: 18px;
   color: #a3a3a3;
 }
+
 .title ul .active {
   border-bottom: 4px solid #fe5431;
 }
+
 .right {
   float: right;
 }
+
 .left {
   float: left;
 }
-.box3 {
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  overflow: hidden;
+}
+
+.report-box {
   background: #f7f7f7;
   overflow: hidden;
 }
-.box3 .a1 {
-  width: 80%;
-  margin: 0 auto;
-}
-.box3 .a1 .title {
-  position: relative;
-  padding: 18px 0 16px;
-  font-size: 20px;
-  font-weight: bold;
-}
-.box3 .a1 .title .more {
-  font-weight: normal;
-  position: absolute;
-  right: 0;
-  top: 22px;
-  padding-right: 17px;
-  font-size: 14px;
-  background: url(img/readMore.png) no-repeat right 7px;
-  color: #fd6959;
-}
-.box3 .a1 #myDiv {
+
+.report-box .wrap {
   overflow: hidden;
-}
-.box3 .a1 #myDiv li {
-  height: 230px;
-  position: relative;
-  overflow: hidden;
-  width: 22%;
   box-sizing: border-box;
+  width: 1000px;
+  min-width: 1000px;
+  text-align: left;
+  margin: 0 auto;
+  padding-top: 25px;
+}
+
+.report-box .wrap #myDiv {
+  padding-bottom: 20px;
+  list-style: none;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.report-box .wrap #myDiv li {
+  background: #fff;
+  height: 225px;
+  margin-bottom: 40px;
+  width: 220px;
+  line-height: 21px;
+  margin: 0 27px 20px 0;
   float: left;
   border: 1px solid #e6e9e9;
   border-radius: 6px;
-  margin-left: 45px;
-  margin: 10px 10px;
 }
-.box3 .a1 #myDiv li img {
-  width: 100%;
-  padding-left: 14px;
+
+.report-box .wrap #myDiv li a {
+  color: #474747;
+  display: block;
+  height: 240px;
+  text-decoration: none;
+}
+
+.report-box .wrap #myDiv li a .content_pic {
+  border-radius: 6px 6px 0 0;
+  vertical-align: top;
+  width: 220px;
   height: 130px;
 }
-.box3 .a1 #myDiv li .info {
+
+.report-box .wrap #myDiv li a .info {
+  height: 90px;
+  background: url(../img/listbg.jpg) no-repeat left bottom;
+  background-size: 221px 19px;
   padding: 7px 10px 10px;
 }
-.box3 .a1 #myDiv li .info .name {
+
+.report-box .wrap #myDiv li a .info .name {
   font-size: 14px;
   height: 45px;
   overflow: hidden;
   word-break: break-all;
-  padding-left: 14px;
 }
-.box3 .a1 #myDiv li .info .name span {
-  display: block;
-  font-size: 12px;
+
+.report-box .wrap #myDiv li a .info .tip {
   color: #a3a3a3;
+  padding: 13px 0;
 }
-.box3 .a1 #myDiv li .info .tip {
-  color: #a3a3a3;
-  font-size: 12px;
-  height: 20px;
-  line-height: 20px;
+
+.report-box .wrap #myDiv li a .info .tip .right {
+  float: right;
 }
-.box3 .a1 #myDiv li .info .tip .price {
-  font-size: 14px;
-  color: #fe5341;
+
+.report-box .wrap #myDiv li a .info .tip .right .xin {
+  background: url(../img/xin.png) no-repeat left center;
 }
-.box3 .a1 #myDiv li .info .tip span {
+
+.report-box .wrap #myDiv li a .info .tip .right .look {
+  background: url(../img/reply.png) no-repeat left center;
+}
+
+.report-box .wrap #myDiv li a .info .tip .right span {
   display: inline-block;
   vertical-align: middle;
   padding-left: 14px;
-  margin-left: 8px;
+  margin-left: 3px;
+  font-size: 12px;
 }
-.box3 .a1 #myDiv li .info .tip .xin {
-  background: url(img/xin.png) no-repeat left center;
-}
-.box3 .a1 #myDiv li .info .tip .look {
-  background: url(img/reply.png) no-repeat left center;
-}
-.box3 .a1 .playMore {
+
+.report-box .wrap .playMore {
+  width: 100%;
   text-align: center;
   font-size: 16px;
   padding-top: 10px;
   padding-bottom: 50px;
 }
-.box3 .a1 .playMore a {
-  color: #ff0000;
-}
-.box3 .a1 .playMore .more-btn {
-  background: url(img/more.png) no-repeat left center;
-  color: #000000;
+
+.report-box .wrap .playMore .more-btn {
+  width: 100%;
+  background: url(../img/more.png) no-repeat left center;
+  color: #fe5341;
   padding-left: 24px;
 }
