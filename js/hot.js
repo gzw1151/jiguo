@@ -24,15 +24,10 @@ function show() {
         var li = document.createElement("li");
         var a = document.createElement("a");
         a.href = "##";
-
-
         var a_img = document.createElement("img");
         a_img.src = item.img;
         a_img.className = "content_pic";
         a.appendChild(a_img);
-
-
-
         var a_div = document.createElement('div');
         var a_divp = document.createElement("p");
         var a_span = document.createElement('span');
@@ -42,28 +37,22 @@ function show() {
         a_span.innerHTML = item.description;
         a_divp.appendChild(a_span)
         a_div.appendChild(a_divp)
-
         var a_div_div1 = document.createElement('div');
         var a_div_div1_span1 = document.createElement('span');
         a_div_div1.className = 'tip fix'
         a_div_div1_span1.innerHTML = item.price;
         a_div_div1_span1.className = 'price left'
         a_div_div1.appendChild(a_div_div1_span1)
-
-
-
-
         var a_div_div2 = document.createElement('div');
         var a_div_div2_span1 = document.createElement('span');
         var a_div_div2_span2 = document.createElement('span');
         a_div_div2.className = 'right icon'
         a_div_div2_span1.innerHTML = item.like
-        a_div_div2_span1.className = "look";
+        a_div_div2_span1.className = "xin";
         a_div_div2_span2.innerHTML = item.words
-        a_div_div2_span2.className = "xin";
+        a_div_div2_span2.className = "look";
         a_div_div2.appendChild(a_div_div2_span1)
         a_div_div2.appendChild(a_div_div2_span2)
-
         a_div_div1.appendChild(a_div_div2)
         a_div.appendChild(a_div_div1)
         a.appendChild(a_div);
@@ -90,3 +79,33 @@ bth.onclick = function () {
         }, 1000);
     }
 };
+var shopImgs = document.getElementsByTagName('img')
+
+// 遍历全部的img路径跳转
+// 改跳转路径
+for (let item of shopImgs) {
+    item.addEventListener("click", function () {
+        window.location.href = "./shop/shopProduct.html";
+
+    });
+}
+var xin = document.getElementsByClassName('xin')
+console.log(xin);
+for (var item1 of xin) {
+    var flg = true
+    item1.onclick = function () {
+        var praiseNum1 = this.innerHTML;
+        if (flg) {
+            praiseNum1++;
+            flg = false;
+            this.style.background = "url(../css/img/xinRedh.png) 0px 4px / 12px no-repeat ";
+
+        } else {
+            praiseNum1--;
+            flg = true;
+            this.style.background = 'url(../css/img/xin.png)0px 4px / 12px no-repeat'
+        }
+        this.innerHTML = praiseNum1;
+
+    }
+}

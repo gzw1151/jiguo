@@ -91,4 +91,14 @@ bth.onclick = function () {
         }, 1000);
     }
 };
+var shopImgs = document.getElementsByTagName('img')
+
+// 遍历全部的img路径跳转
+// 改跳转路径
+for (let item of shopImgs) {
+    item.addEventListener("click", function () {
+        window.location.href = "./shop/shopProduct.html";
+
+    });
+}
 

@@ -7,10 +7,12 @@
   text-align: center;
   overflow: hidden;
 }
+
 .title p {
   font-size: 40px;
   margin: 40px 0px 38px 0px;
 }
+
 .title ul {
   display: inline-block;
   width: auto;
@@ -18,38 +20,47 @@
   overflow: hidden;
   margin: 0 auto;
 }
+
 .title ul li {
   float: left;
   width: 165px;
   height: 100%;
   box-sizing: border-box;
 }
+
 .title ul li a {
   font-size: 18px;
   color: #a3a3a3;
 }
+
 .title ul .active {
   border-bottom: 4px solid #fe5431;
 }
+
 .right {
   float: right;
 }
+
 .left {
   float: left;
 }
+
 .box3 {
   background: #f7f7f7;
   overflow: hidden;
 }
+
 .box3 .a1 {
   width: 80%;
   margin: 0 auto;
   overflow: hidden;
 }
+
 .box3 .a1 #myDiv {
   width: 700px;
   margin: 20px;
 }
+
 .box3 .a1 #myDiv li {
   border-radius: 6px;
   border: 1px solid #e6e9e9;
@@ -57,14 +68,17 @@
   position: relative;
   overflow: hidden;
 }
+
 .box3 .a1 #myDiv a:hover img {
   animation: lun 1.5s ease-in infinite both;
 }
+
 .box3 .a1 #myDiv img {
   border-radius: 6px;
   width: 700px;
   height: 400px;
 }
+
 .box3 .a1 #myDiv .info {
   position: absolute;
   left: 0;
@@ -74,15 +88,18 @@
   background: rgba(255, 255, 255, 0.9);
   padding: 10px 22px;
 }
+
 .box3 .a1 #myDiv .info .title1 {
   font-size: 18px;
   padding: 9px 0 12px;
   font-weight: normal;
 }
+
 .box3 .a1 #myDiv .info .btm {
   font-size: 13px;
   padding: 16px 0 11px;
 }
+
 .box3 .a1 #myDiv .info .btm .userInfo .avt {
   width: 30px;
   height: 30px;
@@ -93,28 +110,35 @@
   margin-right: 15px;
   background-size: contain;
 }
+
 .box3 .a1 #myDiv .info .btm .userInfo .name {
   color: #fe695a;
 }
+
 .box3 .a1 #myDiv .info .btm .userInfo .time {
   color: #a3a3a3;
 }
+
 .box3 .a1 #myDiv .info .btm .icon span {
   display: inline-block;
   vertical-align: middle;
   padding-left: 14px;
   margin-left: 8px;
 }
+
 .box3 .a1 #myDiv .info .btm .icon .zan {
-  background: url(img/zan.png) no-repeat left 4px;
+  background: url(img/zan.png) no-repeat 1px 2px;
 }
+
 .box3 .a1 #myDiv .info .btm .icon .look {
-  background: url(img/reply.png) no-repeat left center;
+  background: url(img/reply.png) no-repeat 1px 2px;
 }
+
 .box3 .a1 .listR {
   width: 270px;
   margin-top: 10px;
 }
+
 .box3 .a1 .listR .title2 {
   position: relative;
   font-size: 18px;
@@ -124,33 +148,41 @@
   border-left: 10px solid #600101;
   font-weight: normal;
 }
+
 .box3 .a1 .listR .imgBox {
   margin-top: 20px;
 }
+
 .box3 .a1 .listR .listR .imgBox {
   margin-top: 20px;
 }
+
 .box3 .a1 .listR .info {
   margin: 10px 0 20px;
 }
+
 .box3 .a1 .listR .info h5 {
   font-size: 16px;
   padding: 5px 0;
   color: black;
 }
+
 .box3 .a1 .listR .info .text {
   color: #a3a3a3;
   font-size: 14px;
 }
+
 .playMore {
   text-align: center;
   font-size: 16px;
   padding-top: 10px;
   padding-bottom: 50px;
 }
+
 .playMore a {
   color: #ff0000;
 }
+
 .playMore .more-btn {
   background: url(img/more.png) no-repeat left center;
   color: #000000;

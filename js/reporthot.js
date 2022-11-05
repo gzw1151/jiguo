@@ -94,3 +94,54 @@ bth.onclick = function () {
     }
 
 };
+var zan = document.getElementsByClassName('zan')
+
+for (var item of zan) {
+    var flg = true
+    item.onclick = function () {
+        var praiseNum = this.innerHTML;
+        if (flg) {
+            praiseNum++;
+            flg = false;
+            this.style.background = "url(../css/img/use5.png) 1px 2px / 12px no-repeat";
+        } else {
+            praiseNum--;
+            flg = true;
+            this.style.background = 'url(../css/img/zan.png)1px 2px / 12px no-repeat'
+        }
+        this.innerHTML = praiseNum;
+
+    }
+}
+var xin = document.getElementsByClassName('xin')
+
+for (var item1 of xin) {
+    var flg = true
+    item1.onclick = function () {
+        var praiseNum1 = this.innerHTML;
+        if (flg) {
+            praiseNum1++;
+            flg = false;
+            this.style.background = "url(./css/img/xinRedh.png) 5px 2px / 14px no-repeat ";
+
+        } else {
+            praiseNum1--;
+            flg = true;
+            this.style.background = 'url(./css/img/xin.png) 5px 2px / 14px no-repeat'
+            '../css/img/xin.png'
+
+        }
+        this.innerHTML = praiseNum1;
+
+    }
+}
+var shopImgs = document.getElementsByTagName('img')
+
+// 遍历全部的img路径跳转
+// 改跳转路径
+for (let item of shopImgs) {
+    item.addEventListener("click", function () {
+        window.location.href = "./shop/shopProduct.html";
+
+    });
+}
